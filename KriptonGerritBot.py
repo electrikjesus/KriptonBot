@@ -15,7 +15,7 @@ kripton_people = [
 bot = telegram.Bot(token='<<TOKEN>>')
 
 while True:
-    data = urllib2.urlopen('http://gerrit.libreoffice.org/changes/?n=25&O=81')
+    data = urllib2.urlopen('http://review.blissroms.com/changes/?n=25&O=81')
     json_text = data.read()
     json_text = json_text[5:] # trim
 
@@ -31,7 +31,7 @@ while True:
                         '\n - Durum: ' + patch['status'] + \
                         '\n - Baslik: ' + patch['subject'] + \
                         '\n - Degisiklik: +' + str(patch['insertions']) + ' -' + str(patch['deletions']) + \
-                        '\n - Baglanti: https://gerrit.libreoffice.org/#/c/' + _number
+                        '\n - Baglanti: review.blissroms.com/#/c/' + _number
 
                 subscribers = []
                 for update in bot.getUpdates():
