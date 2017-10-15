@@ -31,7 +31,7 @@ def turingtest(bot, update):
     bot.sendMessage(update.message.chat_id, text=texts[random.randint(0,3)])
 
 def gerrit(bot, update):
-    bot.sendMessage(update.message.chat_id, text='Try https://gerrit.libreoffice.org/ and https://bugs.documentfoundation.org/')    
+    bot.sendMessage(update.message.chat_id, text='Try https://review.blissroms.com/')    
 
 def turku(bot, update):
     bot.sendMessage(update.message.chat_id, text='Gunde 3 ogun Neset Ertas!!')
